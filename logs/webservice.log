@@ -1,372 +1,98 @@
-2023-04-25 00:44:23,244 WARN c.z.h.p.HikariPool[HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h33s935ms376µs600ns).
-2023-04-25 06:59:37,719 WARN c.z.h.p.HikariPool[HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6h15m29s612ms314µs).
-2023-04-25 07:29:15,108 INFO o.h.v.i.u.Version[background-preinit] HV000001: Hibernate Validator 8.0.0.Final
-2023-04-25 07:29:15,426 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Starting CapstoneEmployeeProjectApplication using Java 17.0.6 with PID 8320 (C:\Users\Shreya\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\capstone-employee-project\bin\main started by Shreya in C:\Users\Shreya\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\capstone-employee-project)
-2023-04-25 07:29:15,429 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] No active profile set, falling back to 1 default profile: "default"
-2023-04-25 07:29:20,019 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-04-25 07:29:20,349 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Finished Spring Data repository scanning in 227 ms. Found 1 JPA repository interfaces.
-2023-04-25 07:29:23,090 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat initialized with port(s): 8080 (https)
-2023-04-25 07:29:23,133 INFO o.a.c.h.Http11NioProtocol[main] Initializing ProtocolHandler ["https-jsse-nio-8080"]
-2023-04-25 07:29:23,151 INFO o.a.c.c.StandardService[main] Starting service [Tomcat]
-2023-04-25 07:29:23,152 INFO o.a.c.c.StandardEngine[main] Starting Servlet engine: [Apache Tomcat/10.1.8]
-2023-04-25 07:29:23,633 INFO o.a.c.c.C.[.[.[/][main] Initializing Spring embedded WebApplicationContext
-2023-04-25 07:29:23,635 INFO o.s.b.w.s.c.ServletWebServerApplicationContext[main] Root WebApplicationContext: initialization completed in 8040 ms
-2023-04-25 07:29:24,508 INFO o.h.j.i.u.LogHelper[main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-04-25 07:29:24,816 INFO o.h.Version[main] HHH000412: Hibernate ORM core version 6.1.7.Final
-2023-04-25 07:29:26,074 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Starting...
-2023-04-25 07:29:27,851 INFO c.z.h.p.HikariPool[main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@bc8d68b
-2023-04-25 07:29:27,855 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Start completed.
-2023-04-25 07:29:29,099 INFO SQL dialect[main] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-04-25 07:29:38,238 INFO o.h.e.t.j.p.i.JtaPlatformInitiator[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-04-25 07:29:38,320 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-04-25 07:29:40,204 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-04-25 07:29:41,411 INFO o.a.c.h.Http11NioProtocol[main] Starting ProtocolHandler ["https-jsse-nio-8080"]
-2023-04-25 07:29:41,441 WARN o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext[main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-2023-04-25 07:29:41,449 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[main] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-04-25 07:29:41,459 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Shutdown initiated...
-2023-04-25 07:29:41,577 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Shutdown completed.
-2023-04-25 07:29:41,584 INFO o.a.c.h.Http11NioProtocol[main] Pausing ProtocolHandler ["https-jsse-nio-8080"]
-2023-04-25 07:29:41,585 INFO o.a.c.c.StandardService[main] Stopping service [Tomcat]
-2023-04-25 07:29:41,619 INFO o.a.c.h.Http11NioProtocol[main] Stopping ProtocolHandler ["https-jsse-nio-8080"]
-2023-04-25 07:29:41,621 INFO o.a.c.h.Http11NioProtocol[main] Destroying ProtocolHandler ["https-jsse-nio-8080"]
-2023-04-25 07:29:41,652 INFO o.s.b.a.l.ConditionEvaluationReportLogger[main] 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2023-04-25 07:29:41,750 ERROR o.s.b.d.LoggingFailureAnalysisReporter[main] 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8080 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
-
-2023-04-25 07:35:23,579 INFO o.h.v.i.u.Version[background-preinit] HV000001: Hibernate Validator 8.0.0.Final
-2023-04-25 07:35:23,707 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Starting CapstoneEmployeeProjectApplication using Java 17.0.6 with PID 5296 (C:\Users\Shreya\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\capstone-employee-project\bin\main started by Shreya in C:\Users\Shreya\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\capstone-employee-project)
-2023-04-25 07:35:23,710 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] No active profile set, falling back to 1 default profile: "default"
-2023-04-25 07:35:24,929 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-04-25 07:35:25,127 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Finished Spring Data repository scanning in 182 ms. Found 1 JPA repository interfaces.
-2023-04-25 07:35:26,256 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat initialized with port(s): 8080 (https)
-2023-04-25 07:35:26,279 INFO o.a.c.h.Http11NioProtocol[main] Initializing ProtocolHandler ["https-jsse-nio-8080"]
-2023-04-25 07:35:26,288 INFO o.a.c.c.StandardService[main] Starting service [Tomcat]
-2023-04-25 07:35:26,289 INFO o.a.c.c.StandardEngine[main] Starting Servlet engine: [Apache Tomcat/10.1.8]
-2023-04-25 07:35:26,522 INFO o.a.c.c.C.[.[.[/][main] Initializing Spring embedded WebApplicationContext
-2023-04-25 07:35:26,523 INFO o.s.b.w.s.c.ServletWebServerApplicationContext[main] Root WebApplicationContext: initialization completed in 2701 ms
-2023-04-25 07:35:26,846 INFO o.h.j.i.u.LogHelper[main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-04-25 07:35:26,970 INFO o.h.Version[main] HHH000412: Hibernate ORM core version 6.1.7.Final
-2023-04-25 07:35:27,887 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Starting...
-2023-04-25 07:35:28,859 INFO c.z.h.p.HikariPool[main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d132bb6
-2023-04-25 07:35:28,865 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Start completed.
-2023-04-25 07:35:29,608 INFO SQL dialect[main] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-04-25 07:35:31,528 INFO o.h.e.t.j.p.i.JtaPlatformInitiator[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-04-25 07:35:31,567 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-04-25 07:35:32,573 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-04-25 07:35:33,197 INFO o.a.c.h.Http11NioProtocol[main] Starting ProtocolHandler ["https-jsse-nio-8080"]
-2023-04-25 07:35:33,509 INFO o.a.t.u.n.N.certificate[main] Connector [https-jsse-nio-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from [file:/C:/Users/Shreya/Documents/workspace-spring-tool-suite-4-4.17.2.RELEASE/capstone-employee-project/bin/main/capstoneemployee.jks] using alias [capstone-https] and with trust store [null]
-2023-04-25 07:35:33,755 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat started on port(s): 8080 (https) with context path ''
-2023-04-25 07:35:33,787 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Started CapstoneEmployeeProjectApplication in 11.129 seconds (process running for 13.578)
-2023-04-25 07:40:04,579 INFO o.a.c.c.C.[.[.[/][https-jsse-nio-8080-exec-3] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-04-25 07:40:04,579 INFO o.s.w.s.DispatcherServlet[https-jsse-nio-8080-exec-3] Initializing Servlet 'dispatcherServlet'
-2023-04-25 07:40:04,583 INFO o.s.w.s.DispatcherServlet[https-jsse-nio-8080-exec-3] Completed initialization in 0 ms
-2023-04-25 07:40:05,184 WARN o.s.c.LocalVariableTableParameterNameDiscoverer[https-jsse-nio-8080-exec-3] Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hdfc.capstone.employee.controller.EmployeeController
-2023-04-25 09:20:58,887 WARN c.z.h.p.HikariPool[HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=21m56s346ms10µs200ns).
-2023-04-25 09:55:26,067 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin[RMI TCP Connection(126)-127.0.0.1] Application shutdown requested.
-2023-04-25 09:55:27,760 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(126)-127.0.0.1] Pausing ProtocolHandler ["https-jsse-nio-8080"]
-2023-04-25 09:55:27,761 INFO o.a.c.c.StandardService[RMI TCP Connection(126)-127.0.0.1] Stopping service [Tomcat]
-2023-04-25 09:55:27,987 INFO o.a.c.c.C.[.[.[/][RMI TCP Connection(126)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-04-25 09:55:28,317 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(126)-127.0.0.1] Stopping ProtocolHandler ["https-jsse-nio-8080"]
-2023-04-25 09:55:28,550 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(126)-127.0.0.1] Destroying ProtocolHandler ["https-jsse-nio-8080"]
-2023-04-25 09:55:28,794 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[RMI TCP Connection(126)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-04-25 09:55:29,282 INFO c.z.h.HikariDataSource[RMI TCP Connection(126)-127.0.0.1] HikariPool-1 - Shutdown initiated...
-2023-04-25 09:55:29,344 INFO c.z.h.HikariDataSource[RMI TCP Connection(126)-127.0.0.1] HikariPool-1 - Shutdown completed.
-2023-04-25 12:12:01,789 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils[Test worker] Could not detect default configuration classes for test class [com.hdfc.capstone.employee.CapstoneEmployeeProjectApplicationTests]: CapstoneEmployeeProjectApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-04-25 12:12:01,991 INFO o.s.b.t.c.SpringBootTestContextBootstrapper[Test worker] Found @SpringBootConfiguration com.hdfc.capstone.employee.CapstoneEmployeeProjectApplication for test class com.hdfc.capstone.employee.CapstoneEmployeeProjectApplicationTests
-2023-04-25 12:12:02,929 INFO c.h.c.e.CapstoneEmployeeProjectApplicationTests[Test worker] Starting CapstoneEmployeeProjectApplicationTests using Java 17.0.6 with PID 28096 (started by Shreya in C:\Users\Shreya\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\capstone-employee-project)
-2023-04-25 12:12:02,931 INFO c.h.c.e.CapstoneEmployeeProjectApplicationTests[Test worker] No active profile set, falling back to 1 default profile: "default"
-2023-04-25 12:12:02,944 INFO o.h.v.i.u.Version[background-preinit] HV000001: Hibernate Validator 8.0.0.Final
-2023-04-25 12:12:04,346 INFO o.s.d.r.c.RepositoryConfigurationDelegate[Test worker] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-04-25 12:12:04,432 INFO o.s.d.r.c.RepositoryConfigurationDelegate[Test worker] Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interfaces.
-2023-04-25 12:12:05,195 INFO o.h.j.i.u.LogHelper[Test worker] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-04-25 12:12:05,280 INFO o.h.Version[Test worker] HHH000412: Hibernate ORM core version 6.1.7.Final
-2023-04-25 12:12:05,954 INFO c.z.h.HikariDataSource[Test worker] HikariPool-1 - Starting...
-2023-04-25 12:12:10,565 INFO c.z.h.p.HikariPool[Test worker] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@111fe921
-2023-04-25 12:12:10,569 INFO c.z.h.HikariDataSource[Test worker] HikariPool-1 - Start completed.
-2023-04-25 12:12:13,047 INFO SQL dialect[Test worker] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-04-25 12:12:16,506 INFO o.h.e.t.j.p.i.JtaPlatformInitiator[Test worker] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-04-25 12:12:16,524 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[Test worker] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-04-25 12:12:17,886 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[Test worker] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-04-25 12:12:18,554 INFO c.h.c.e.CapstoneEmployeeProjectApplicationTests[Test worker] Started CapstoneEmployeeProjectApplicationTests in 16.072 seconds (process running for 21.571)
-2023-04-25 12:12:18,848 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils[Test worker] Could not detect default configuration classes for test class [com.hdfc.capstone.employee.test.EmployeeTest]: EmployeeTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2023-04-25 12:12:18,858 INFO o.s.b.t.c.SpringBootTestContextBootstrapper[Test worker] Found @SpringBootConfiguration com.hdfc.capstone.employee.CapstoneEmployeeProjectApplication for test class com.hdfc.capstone.employee.test.EmployeeTest
-2023-04-25 12:12:19,132 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-04-25 12:12:19,136 INFO c.z.h.HikariDataSource[SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
-2023-04-25 12:12:19,266 INFO c.z.h.HikariDataSource[SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
-2023-04-25 22:03:12,011 INFO o.h.v.i.u.Version[background-preinit] HV000001: Hibernate Validator 8.0.0.Final
-2023-04-25 22:03:14,442 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Starting CapstoneEmployeeProjectApplication using Java 17.0.6 with PID 10116 (C:\Users\Shreya\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\capstone-employee-project\bin\main started by Shreya in C:\Users\Shreya\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\capstone-employee-project)
-2023-04-25 22:03:14,443 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] No active profile set, falling back to 1 default profile: "default"
-2023-04-25 22:03:38,527 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-04-25 22:03:45,885 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Finished Spring Data repository scanning in 6280 ms. Found 1 JPA repository interfaces.
-2023-04-25 22:05:04,858 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat initialized with port(s): 8080 (https)
-2023-04-25 22:05:06,165 INFO o.a.c.h.Http11NioProtocol[main] Initializing ProtocolHandler ["https-jsse-nio-8080"]
-2023-04-25 22:05:06,179 INFO o.a.c.c.StandardService[main] Starting service [Tomcat]
-2023-04-25 22:05:06,180 INFO o.a.c.c.StandardEngine[main] Starting Servlet engine: [Apache Tomcat/10.1.8]
-2023-04-25 22:05:11,852 INFO o.a.c.c.C.[.[.[/][main] Initializing Spring embedded WebApplicationContext
-2023-04-25 22:05:11,855 INFO o.s.b.w.s.c.ServletWebServerApplicationContext[main] Root WebApplicationContext: initialization completed in 115517 ms
-2023-04-25 22:05:37,655 INFO o.h.j.i.u.LogHelper[main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-04-25 22:05:44,873 INFO o.h.Version[main] HHH000412: Hibernate ORM core version 6.1.7.Final
-2023-04-25 22:05:57,078 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Starting...
-2023-04-25 22:05:59,506 ERROR c.z.h.p.HikariPool[main] HikariPool-1 - Exception during pool initialization.
-com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:175)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
-	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:284)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:177)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:36)
-	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:255)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:230)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
-	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44)
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:218)
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:138)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1348)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1419)
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1132)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:907)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293)
-	at com.hdfc.capstone.employee.CapstoneEmployeeProjectApplication.main(CapstoneEmployeeProjectApplication.java:10)
-Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150)
-	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166)
-	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
-	at com.mysql.cj.NativeSession.connect(NativeSession.java:121)
-	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:945)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
-	... 47 common frames omitted
-Caused by: java.net.ConnectException: Connection refused: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153)
-	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
-	... 50 common frames omitted
-2023-04-25 22:06:01,523 WARN o.h.e.j.e.i.JdbcEnvironmentInitiator[main] HHH000342: Could not obtain connection to query metadata
-com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:175)
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
-	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:284)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:177)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:36)
-	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:255)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:230)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
-	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44)
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:218)
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:138)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1348)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1419)
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1132)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:907)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293)
-	at com.hdfc.capstone.employee.CapstoneEmployeeProjectApplication.main(CapstoneEmployeeProjectApplication.java:10)
-Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150)
-	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166)
-	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
-	at com.mysql.cj.NativeSession.connect(NativeSession.java:121)
-	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:945)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
-	... 47 common frames omitted
-Caused by: java.net.ConnectException: Connection refused: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:633)
-	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153)
-	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
-	... 50 common frames omitted
-2023-04-25 22:06:02,576 ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean[main] Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
-2023-04-25 22:06:02,577 WARN o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext[main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
-2023-04-25 22:06:04,045 INFO o.a.c.c.StandardService[main] Stopping service [Tomcat]
-2023-04-25 22:06:06,847 INFO o.s.b.a.l.ConditionEvaluationReportLogger[main] 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2023-04-25 22:06:14,666 ERROR o.s.b.SpringApplication[main] Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1132)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:907)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293)
-	at com.hdfc.capstone.employee.CapstoneEmployeeProjectApplication.main(CapstoneEmployeeProjectApplication.java:10)
-Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:267)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:230)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
-	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44)
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:218)
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:138)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1348)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1419)
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
-	... 16 common frames omitted
-Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
-	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:147)
-	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:60)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:244)
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:36)
-	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:255)
-	... 31 common frames omitted
-2023-04-25 22:13:06,652 INFO o.h.v.i.u.Version[background-preinit] HV000001: Hibernate Validator 8.0.0.Final
-2023-04-25 22:13:06,752 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Starting CapstoneEmployeeProjectApplication using Java 17.0.6 with PID 13616 (C:\Users\Shreya\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\capstone-employee-project\bin\main started by Shreya in C:\Users\Shreya\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\capstone-employee-project)
-2023-04-25 22:13:06,754 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] No active profile set, falling back to 1 default profile: "default"
-2023-04-25 22:13:07,511 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-04-25 22:13:07,572 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interfaces.
-2023-04-25 22:13:08,104 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat initialized with port(s): 8080 (https)
-2023-04-25 22:13:08,113 INFO o.a.c.h.Http11NioProtocol[main] Initializing ProtocolHandler ["https-jsse-nio-8080"]
-2023-04-25 22:13:08,119 INFO o.a.c.c.StandardService[main] Starting service [Tomcat]
-2023-04-25 22:13:08,119 INFO o.a.c.c.StandardEngine[main] Starting Servlet engine: [Apache Tomcat/10.1.8]
-2023-04-25 22:13:08,234 INFO o.a.c.c.C.[.[.[/][main] Initializing Spring embedded WebApplicationContext
-2023-04-25 22:13:08,235 INFO o.s.b.w.s.c.ServletWebServerApplicationContext[main] Root WebApplicationContext: initialization completed in 1422 ms
-2023-04-25 22:13:08,369 INFO o.h.j.i.u.LogHelper[main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-04-25 22:13:08,413 INFO o.h.Version[main] HHH000412: Hibernate ORM core version 6.1.7.Final
-2023-04-25 22:13:08,676 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Starting...
-2023-04-25 22:13:10,755 INFO c.z.h.p.HikariPool[main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@238ad211
-2023-04-25 22:13:10,758 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Start completed.
-2023-04-25 22:13:11,065 INFO SQL dialect[main] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-04-25 22:13:13,559 INFO o.h.e.t.j.p.i.JtaPlatformInitiator[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-04-25 22:13:13,571 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-04-25 22:13:15,364 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-04-25 22:13:17,291 INFO o.a.c.h.Http11NioProtocol[main] Starting ProtocolHandler ["https-jsse-nio-8080"]
-2023-04-25 22:13:17,991 INFO o.a.t.u.n.N.certificate[main] Connector [https-jsse-nio-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from [file:/C:/Users/Shreya/Documents/workspace-spring-tool-suite-4-4.17.2.RELEASE/capstone-employee-project/bin/main/capstoneemployee.jks] using alias [capstone-https] and with trust store [null]
-2023-04-25 22:13:18,233 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat started on port(s): 8080 (https) with context path ''
-2023-04-25 22:13:18,250 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Started CapstoneEmployeeProjectApplication in 11.957 seconds (process running for 13.22)
-2023-04-25 22:19:39,984 INFO o.a.c.c.C.[.[.[/][https-jsse-nio-8080-exec-6] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-04-25 22:19:40,014 INFO o.s.w.s.DispatcherServlet[https-jsse-nio-8080-exec-6] Initializing Servlet 'dispatcherServlet'
-2023-04-25 22:19:40,018 INFO o.s.w.s.DispatcherServlet[https-jsse-nio-8080-exec-6] Completed initialization in 3 ms
-2023-04-25 22:19:40,631 WARN o.s.c.LocalVariableTableParameterNameDiscoverer[https-jsse-nio-8080-exec-6] Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hdfc.capstone.employee.controller.EmployeeController
-2023-04-25 22:20:37,604 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin[RMI TCP Connection(11)-127.0.0.1] Application shutdown requested.
-2023-04-25 22:20:37,618 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(11)-127.0.0.1] Pausing ProtocolHandler ["https-jsse-nio-8080"]
-2023-04-25 22:20:37,619 INFO o.a.c.c.StandardService[RMI TCP Connection(11)-127.0.0.1] Stopping service [Tomcat]
-2023-04-25 22:20:37,635 INFO o.a.c.c.C.[.[.[/][RMI TCP Connection(11)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-04-25 22:20:37,689 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(11)-127.0.0.1] Stopping ProtocolHandler ["https-jsse-nio-8080"]
-2023-04-25 22:20:37,693 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(11)-127.0.0.1] Destroying ProtocolHandler ["https-jsse-nio-8080"]
-2023-04-25 22:20:37,698 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[RMI TCP Connection(11)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-04-25 22:20:37,702 INFO c.z.h.HikariDataSource[RMI TCP Connection(11)-127.0.0.1] HikariPool-1 - Shutdown initiated...
-2023-04-25 22:20:37,743 INFO c.z.h.HikariDataSource[RMI TCP Connection(11)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2023-04-27 08:12:11,908 INFO o.h.v.i.u.Version[background-preinit] HV000001: Hibernate Validator 8.0.0.Final
+2023-04-27 08:12:12,009 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Starting CapstoneEmployeeProjectApplication using Java 17.0.6 with PID 12728 (C:\Users\Shreya\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\capstone-employee-project\bin\main started by Shreya in C:\Users\Shreya\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\capstone-employee-project)
+2023-04-27 08:12:12,011 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] No active profile set, falling back to 1 default profile: "default"
+2023-04-27 08:12:16,864 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-27 08:12:17,198 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Finished Spring Data repository scanning in 207 ms. Found 1 JPA repository interfaces.
+2023-04-27 08:12:20,298 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat initialized with port(s): 8080 (https)
+2023-04-27 08:12:20,323 INFO o.a.c.h.Http11NioProtocol[main] Initializing ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-27 08:12:20,327 INFO o.a.c.c.StandardService[main] Starting service [Tomcat]
+2023-04-27 08:12:20,328 INFO o.a.c.c.StandardEngine[main] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-04-27 08:12:20,649 INFO o.a.c.c.C.[.[.[/][main] Initializing Spring embedded WebApplicationContext
+2023-04-27 08:12:20,649 INFO o.s.b.w.s.c.ServletWebServerApplicationContext[main] Root WebApplicationContext: initialization completed in 8421 ms
+2023-04-27 08:12:21,135 INFO o.h.j.i.u.LogHelper[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-27 08:12:21,247 INFO o.h.Version[main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-27 08:12:21,820 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Starting...
+2023-04-27 08:12:24,386 INFO c.z.h.p.HikariPool[main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6de610c6
+2023-04-27 08:12:24,390 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Start completed.
+2023-04-27 08:12:25,251 INFO SQL dialect[main] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-27 08:12:29,541 INFO o.h.e.t.j.p.i.JtaPlatformInitiator[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-27 08:12:29,592 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-27 08:12:30,629 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-27 08:12:31,384 INFO o.a.c.h.Http11NioProtocol[main] Starting ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-27 08:12:31,549 INFO o.a.t.u.n.N.certificate[main] Connector [https-jsse-nio-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from [file:/C:/Users/Shreya/Documents/workspace-spring-tool-suite-4-4.17.2.RELEASE/capstone-employee-project/bin/main/capstoneemployee.jks] using alias [capstone-https] and with trust store [null]
+2023-04-27 08:12:31,701 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat started on port(s): 8080 (https) with context path ''
+2023-04-27 08:12:31,712 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Started CapstoneEmployeeProjectApplication in 20.571 seconds (process running for 22.871)
+2023-04-27 08:17:57,248 INFO o.a.c.c.C.[.[.[/][https-jsse-nio-8080-exec-6] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-27 08:17:57,257 INFO o.s.w.s.DispatcherServlet[https-jsse-nio-8080-exec-6] Initializing Servlet 'dispatcherServlet'
+2023-04-27 08:17:57,626 INFO o.s.w.s.DispatcherServlet[https-jsse-nio-8080-exec-6] Completed initialization in 369 ms
+2023-04-27 08:17:58,264 WARN o.s.c.LocalVariableTableParameterNameDiscoverer[https-jsse-nio-8080-exec-6] Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hdfc.capstone.employee.controller.EmployeeController
+2023-04-27 09:00:33,229 WARN c.z.h.p.HikariPool[HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m8s193ms395µs400ns).
+2023-04-27 09:21:32,758 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin[RMI TCP Connection(57)-127.0.0.1] Application shutdown requested.
+2023-04-27 09:21:33,013 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(57)-127.0.0.1] Pausing ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-27 09:21:33,014 INFO o.a.c.c.StandardService[RMI TCP Connection(57)-127.0.0.1] Stopping service [Tomcat]
+2023-04-27 09:21:33,061 INFO o.a.c.c.C.[.[.[/][RMI TCP Connection(57)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-27 09:21:33,230 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(57)-127.0.0.1] Stopping ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-27 09:21:33,285 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(57)-127.0.0.1] Destroying ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-27 09:21:33,303 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[RMI TCP Connection(57)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-27 09:21:33,344 INFO c.z.h.HikariDataSource[RMI TCP Connection(57)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2023-04-27 09:21:33,421 INFO c.z.h.HikariDataSource[RMI TCP Connection(57)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2023-04-27 09:23:14,102 INFO o.h.v.i.u.Version[background-preinit] HV000001: Hibernate Validator 8.0.0.Final
+2023-04-27 09:23:14,199 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Starting CapstoneEmployeeProjectApplication using Java 17.0.6 with PID 26588 (C:\Users\Shreya\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\capstone-employee-project\bin\main started by Shreya in C:\Users\Shreya\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\capstone-employee-project)
+2023-04-27 09:23:14,202 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] No active profile set, falling back to 1 default profile: "default"
+2023-04-27 09:23:16,843 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-27 09:23:17,135 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Finished Spring Data repository scanning in 253 ms. Found 1 JPA repository interfaces.
+2023-04-27 09:23:19,860 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat initialized with port(s): 8080 (https)
+2023-04-27 09:23:19,915 INFO o.a.c.h.Http11NioProtocol[main] Initializing ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-27 09:23:19,940 INFO o.a.c.c.StandardService[main] Starting service [Tomcat]
+2023-04-27 09:23:19,941 INFO o.a.c.c.StandardEngine[main] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-04-27 09:23:20,263 INFO o.a.c.c.C.[.[.[/][main] Initializing Spring embedded WebApplicationContext
+2023-04-27 09:23:20,265 INFO o.s.b.w.s.c.ServletWebServerApplicationContext[main] Root WebApplicationContext: initialization completed in 5917 ms
+2023-04-27 09:23:20,832 INFO o.h.j.i.u.LogHelper[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-27 09:23:21,113 INFO o.h.Version[main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-27 09:23:22,547 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Starting...
+2023-04-27 09:23:24,228 INFO c.z.h.p.HikariPool[main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e3b2dd3
+2023-04-27 09:23:24,244 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Start completed.
+2023-04-27 09:23:25,220 INFO SQL dialect[main] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-27 09:23:29,077 INFO o.h.e.t.j.p.i.JtaPlatformInitiator[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-27 09:23:29,144 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-27 09:23:32,641 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-27 09:23:33,776 INFO o.a.c.h.Http11NioProtocol[main] Starting ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-27 09:23:34,278 INFO o.a.t.u.n.N.certificate[main] Connector [https-jsse-nio-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from [file:/C:/Users/Shreya/Documents/workspace-spring-tool-suite-4-4.17.2.RELEASE/capstone-employee-project/bin/main/capstoneemployee.jks] using alias [capstone-https] and with trust store [null]
+2023-04-27 09:23:34,344 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat started on port(s): 8080 (https) with context path ''
+2023-04-27 09:23:34,370 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Started CapstoneEmployeeProjectApplication in 21.433 seconds (process running for 36.37)
+2023-04-27 09:23:52,731 INFO o.a.c.c.C.[.[.[/][https-jsse-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-27 09:23:52,732 INFO o.s.w.s.DispatcherServlet[https-jsse-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-04-27 09:23:52,734 INFO o.s.w.s.DispatcherServlet[https-jsse-nio-8080-exec-2] Completed initialization in 2 ms
+2023-04-27 09:23:52,825 WARN o.s.c.LocalVariableTableParameterNameDiscoverer[https-jsse-nio-8080-exec-2] Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hdfc.capstone.employee.controller.EmployeeController
+2023-04-27 18:46:23,829 INFO o.h.v.i.u.Version[background-preinit] HV000001: Hibernate Validator 8.0.0.Final
+2023-04-27 18:46:25,027 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Starting CapstoneEmployeeProjectApplication using Java 17.0.6 with PID 14324 (C:\Users\Shreya\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\capstone-employee-project\bin\main started by Shreya in C:\Users\Shreya\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\capstone-employee-project)
+2023-04-27 18:46:25,045 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] No active profile set, falling back to 1 default profile: "default"
+2023-04-27 18:46:36,346 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-27 18:46:37,282 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Finished Spring Data repository scanning in 738 ms. Found 1 JPA repository interfaces.
+2023-04-27 18:46:43,740 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat initialized with port(s): 8080 (https)
+2023-04-27 18:46:43,858 INFO o.a.c.h.Http11NioProtocol[main] Initializing ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-27 18:46:43,870 INFO o.a.c.c.StandardService[main] Starting service [Tomcat]
+2023-04-27 18:46:43,871 INFO o.a.c.c.StandardEngine[main] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-04-27 18:46:44,713 INFO o.a.c.c.C.[.[.[/][main] Initializing Spring embedded WebApplicationContext
+2023-04-27 18:46:44,713 INFO o.s.b.w.s.c.ServletWebServerApplicationContext[main] Root WebApplicationContext: initialization completed in 19512 ms
+2023-04-27 18:46:45,988 INFO o.h.j.i.u.LogHelper[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-27 18:46:46,264 INFO o.h.Version[main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-27 18:46:47,276 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Starting...
+2023-04-27 18:46:54,323 INFO c.z.h.p.HikariPool[main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c956dda
+2023-04-27 18:46:54,354 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Start completed.
+2023-04-27 18:47:02,125 INFO SQL dialect[main] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-27 18:47:34,638 INFO o.h.e.t.j.p.i.JtaPlatformInitiator[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-27 18:47:34,942 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-27 18:47:38,061 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-27 18:47:39,648 INFO o.a.c.h.Http11NioProtocol[main] Starting ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-27 18:47:39,954 INFO o.a.t.u.n.N.certificate[main] Connector [https-jsse-nio-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from [file:/C:/Users/Shreya/Documents/workspace-spring-tool-suite-4-4.17.2.RELEASE/capstone-employee-project/bin/main/capstoneemployee.jks] using alias [capstone-https] and with trust store [null]
+2023-04-27 18:47:40,451 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat started on port(s): 8080 (https) with context path ''
+2023-04-27 18:47:40,463 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Started CapstoneEmployeeProjectApplication in 78.613 seconds (process running for 89.335)
+2023-04-27 21:03:56,171 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin[RMI TCP Connection(142)-127.0.0.1] Application shutdown requested.
+2023-04-27 21:04:02,473 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(142)-127.0.0.1] Pausing ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-27 21:04:02,474 INFO o.a.c.c.StandardService[RMI TCP Connection(142)-127.0.0.1] Stopping service [Tomcat]
+2023-04-27 21:04:05,035 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(142)-127.0.0.1] Stopping ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-27 21:04:05,792 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(142)-127.0.0.1] Destroying ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-27 21:04:06,609 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[RMI TCP Connection(142)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-27 21:04:07,691 INFO c.z.h.HikariDataSource[RMI TCP Connection(142)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2023-04-27 21:04:07,897 INFO c.z.h.HikariDataSource[RMI TCP Connection(142)-127.0.0.1] HikariPool-1 - Shutdown completed.
