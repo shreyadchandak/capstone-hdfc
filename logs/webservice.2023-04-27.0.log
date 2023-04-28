@@ -1,0 +1,98 @@
+2023-04-27 08:12:11,908 INFO o.h.v.i.u.Version[background-preinit] HV000001: Hibernate Validator 8.0.0.Final
+2023-04-27 08:12:12,009 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Starting CapstoneEmployeeProjectApplication using Java 17.0.6 with PID 12728 (C:\Users\Shreya\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\capstone-employee-project\bin\main started by Shreya in C:\Users\Shreya\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\capstone-employee-project)
+2023-04-27 08:12:12,011 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] No active profile set, falling back to 1 default profile: "default"
+2023-04-27 08:12:16,864 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-27 08:12:17,198 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Finished Spring Data repository scanning in 207 ms. Found 1 JPA repository interfaces.
+2023-04-27 08:12:20,298 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat initialized with port(s): 8080 (https)
+2023-04-27 08:12:20,323 INFO o.a.c.h.Http11NioProtocol[main] Initializing ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-27 08:12:20,327 INFO o.a.c.c.StandardService[main] Starting service [Tomcat]
+2023-04-27 08:12:20,328 INFO o.a.c.c.StandardEngine[main] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-04-27 08:12:20,649 INFO o.a.c.c.C.[.[.[/][main] Initializing Spring embedded WebApplicationContext
+2023-04-27 08:12:20,649 INFO o.s.b.w.s.c.ServletWebServerApplicationContext[main] Root WebApplicationContext: initialization completed in 8421 ms
+2023-04-27 08:12:21,135 INFO o.h.j.i.u.LogHelper[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-27 08:12:21,247 INFO o.h.Version[main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-27 08:12:21,820 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Starting...
+2023-04-27 08:12:24,386 INFO c.z.h.p.HikariPool[main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6de610c6
+2023-04-27 08:12:24,390 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Start completed.
+2023-04-27 08:12:25,251 INFO SQL dialect[main] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-27 08:12:29,541 INFO o.h.e.t.j.p.i.JtaPlatformInitiator[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-27 08:12:29,592 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-27 08:12:30,629 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-27 08:12:31,384 INFO o.a.c.h.Http11NioProtocol[main] Starting ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-27 08:12:31,549 INFO o.a.t.u.n.N.certificate[main] Connector [https-jsse-nio-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from [file:/C:/Users/Shreya/Documents/workspace-spring-tool-suite-4-4.17.2.RELEASE/capstone-employee-project/bin/main/capstoneemployee.jks] using alias [capstone-https] and with trust store [null]
+2023-04-27 08:12:31,701 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat started on port(s): 8080 (https) with context path ''
+2023-04-27 08:12:31,712 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Started CapstoneEmployeeProjectApplication in 20.571 seconds (process running for 22.871)
+2023-04-27 08:17:57,248 INFO o.a.c.c.C.[.[.[/][https-jsse-nio-8080-exec-6] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-27 08:17:57,257 INFO o.s.w.s.DispatcherServlet[https-jsse-nio-8080-exec-6] Initializing Servlet 'dispatcherServlet'
+2023-04-27 08:17:57,626 INFO o.s.w.s.DispatcherServlet[https-jsse-nio-8080-exec-6] Completed initialization in 369 ms
+2023-04-27 08:17:58,264 WARN o.s.c.LocalVariableTableParameterNameDiscoverer[https-jsse-nio-8080-exec-6] Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hdfc.capstone.employee.controller.EmployeeController
+2023-04-27 09:00:33,229 WARN c.z.h.p.HikariPool[HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m8s193ms395µs400ns).
+2023-04-27 09:21:32,758 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin[RMI TCP Connection(57)-127.0.0.1] Application shutdown requested.
+2023-04-27 09:21:33,013 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(57)-127.0.0.1] Pausing ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-27 09:21:33,014 INFO o.a.c.c.StandardService[RMI TCP Connection(57)-127.0.0.1] Stopping service [Tomcat]
+2023-04-27 09:21:33,061 INFO o.a.c.c.C.[.[.[/][RMI TCP Connection(57)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-27 09:21:33,230 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(57)-127.0.0.1] Stopping ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-27 09:21:33,285 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(57)-127.0.0.1] Destroying ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-27 09:21:33,303 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[RMI TCP Connection(57)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-27 09:21:33,344 INFO c.z.h.HikariDataSource[RMI TCP Connection(57)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2023-04-27 09:21:33,421 INFO c.z.h.HikariDataSource[RMI TCP Connection(57)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2023-04-27 09:23:14,102 INFO o.h.v.i.u.Version[background-preinit] HV000001: Hibernate Validator 8.0.0.Final
+2023-04-27 09:23:14,199 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Starting CapstoneEmployeeProjectApplication using Java 17.0.6 with PID 26588 (C:\Users\Shreya\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\capstone-employee-project\bin\main started by Shreya in C:\Users\Shreya\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\capstone-employee-project)
+2023-04-27 09:23:14,202 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] No active profile set, falling back to 1 default profile: "default"
+2023-04-27 09:23:16,843 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-27 09:23:17,135 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Finished Spring Data repository scanning in 253 ms. Found 1 JPA repository interfaces.
+2023-04-27 09:23:19,860 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat initialized with port(s): 8080 (https)
+2023-04-27 09:23:19,915 INFO o.a.c.h.Http11NioProtocol[main] Initializing ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-27 09:23:19,940 INFO o.a.c.c.StandardService[main] Starting service [Tomcat]
+2023-04-27 09:23:19,941 INFO o.a.c.c.StandardEngine[main] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-04-27 09:23:20,263 INFO o.a.c.c.C.[.[.[/][main] Initializing Spring embedded WebApplicationContext
+2023-04-27 09:23:20,265 INFO o.s.b.w.s.c.ServletWebServerApplicationContext[main] Root WebApplicationContext: initialization completed in 5917 ms
+2023-04-27 09:23:20,832 INFO o.h.j.i.u.LogHelper[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-27 09:23:21,113 INFO o.h.Version[main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-27 09:23:22,547 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Starting...
+2023-04-27 09:23:24,228 INFO c.z.h.p.HikariPool[main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e3b2dd3
+2023-04-27 09:23:24,244 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Start completed.
+2023-04-27 09:23:25,220 INFO SQL dialect[main] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-27 09:23:29,077 INFO o.h.e.t.j.p.i.JtaPlatformInitiator[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-27 09:23:29,144 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-27 09:23:32,641 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-27 09:23:33,776 INFO o.a.c.h.Http11NioProtocol[main] Starting ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-27 09:23:34,278 INFO o.a.t.u.n.N.certificate[main] Connector [https-jsse-nio-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from [file:/C:/Users/Shreya/Documents/workspace-spring-tool-suite-4-4.17.2.RELEASE/capstone-employee-project/bin/main/capstoneemployee.jks] using alias [capstone-https] and with trust store [null]
+2023-04-27 09:23:34,344 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat started on port(s): 8080 (https) with context path ''
+2023-04-27 09:23:34,370 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Started CapstoneEmployeeProjectApplication in 21.433 seconds (process running for 36.37)
+2023-04-27 09:23:52,731 INFO o.a.c.c.C.[.[.[/][https-jsse-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-27 09:23:52,732 INFO o.s.w.s.DispatcherServlet[https-jsse-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-04-27 09:23:52,734 INFO o.s.w.s.DispatcherServlet[https-jsse-nio-8080-exec-2] Completed initialization in 2 ms
+2023-04-27 09:23:52,825 WARN o.s.c.LocalVariableTableParameterNameDiscoverer[https-jsse-nio-8080-exec-2] Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hdfc.capstone.employee.controller.EmployeeController
+2023-04-27 18:46:23,829 INFO o.h.v.i.u.Version[background-preinit] HV000001: Hibernate Validator 8.0.0.Final
+2023-04-27 18:46:25,027 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Starting CapstoneEmployeeProjectApplication using Java 17.0.6 with PID 14324 (C:\Users\Shreya\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\capstone-employee-project\bin\main started by Shreya in C:\Users\Shreya\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\capstone-employee-project)
+2023-04-27 18:46:25,045 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] No active profile set, falling back to 1 default profile: "default"
+2023-04-27 18:46:36,346 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-27 18:46:37,282 INFO o.s.d.r.c.RepositoryConfigurationDelegate[main] Finished Spring Data repository scanning in 738 ms. Found 1 JPA repository interfaces.
+2023-04-27 18:46:43,740 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat initialized with port(s): 8080 (https)
+2023-04-27 18:46:43,858 INFO o.a.c.h.Http11NioProtocol[main] Initializing ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-27 18:46:43,870 INFO o.a.c.c.StandardService[main] Starting service [Tomcat]
+2023-04-27 18:46:43,871 INFO o.a.c.c.StandardEngine[main] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-04-27 18:46:44,713 INFO o.a.c.c.C.[.[.[/][main] Initializing Spring embedded WebApplicationContext
+2023-04-27 18:46:44,713 INFO o.s.b.w.s.c.ServletWebServerApplicationContext[main] Root WebApplicationContext: initialization completed in 19512 ms
+2023-04-27 18:46:45,988 INFO o.h.j.i.u.LogHelper[main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-27 18:46:46,264 INFO o.h.Version[main] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-27 18:46:47,276 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Starting...
+2023-04-27 18:46:54,323 INFO c.z.h.p.HikariPool[main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c956dda
+2023-04-27 18:46:54,354 INFO c.z.h.HikariDataSource[main] HikariPool-1 - Start completed.
+2023-04-27 18:47:02,125 INFO SQL dialect[main] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-27 18:47:34,638 INFO o.h.e.t.j.p.i.JtaPlatformInitiator[main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-27 18:47:34,942 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-27 18:47:38,061 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-27 18:47:39,648 INFO o.a.c.h.Http11NioProtocol[main] Starting ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-27 18:47:39,954 INFO o.a.t.u.n.N.certificate[main] Connector [https-jsse-nio-8080], TLS virtual host [_default_], certificate type [UNDEFINED] configured from [file:/C:/Users/Shreya/Documents/workspace-spring-tool-suite-4-4.17.2.RELEASE/capstone-employee-project/bin/main/capstoneemployee.jks] using alias [capstone-https] and with trust store [null]
+2023-04-27 18:47:40,451 INFO o.s.b.w.e.t.TomcatWebServer[main] Tomcat started on port(s): 8080 (https) with context path ''
+2023-04-27 18:47:40,463 INFO c.h.c.e.CapstoneEmployeeProjectApplication[main] Started CapstoneEmployeeProjectApplication in 78.613 seconds (process running for 89.335)
+2023-04-27 21:03:56,171 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin[RMI TCP Connection(142)-127.0.0.1] Application shutdown requested.
+2023-04-27 21:04:02,473 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(142)-127.0.0.1] Pausing ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-27 21:04:02,474 INFO o.a.c.c.StandardService[RMI TCP Connection(142)-127.0.0.1] Stopping service [Tomcat]
+2023-04-27 21:04:05,035 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(142)-127.0.0.1] Stopping ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-27 21:04:05,792 INFO o.a.c.h.Http11NioProtocol[RMI TCP Connection(142)-127.0.0.1] Destroying ProtocolHandler ["https-jsse-nio-8080"]
+2023-04-27 21:04:06,609 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean[RMI TCP Connection(142)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-27 21:04:07,691 INFO c.z.h.HikariDataSource[RMI TCP Connection(142)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2023-04-27 21:04:07,897 INFO c.z.h.HikariDataSource[RMI TCP Connection(142)-127.0.0.1] HikariPool-1 - Shutdown completed.
